@@ -8,7 +8,7 @@
 
 
 
-function [Smalldunes,Largedunes] = BedformAnalysisV7Function(DEMfile,flow,flowvar,export)
+function [Smalldunes,Largedunes] = BAMBI(DEMfile,flow,flowvar,export)
 %% add the matlab path to use keep, arcgiswrite, slopeCalc, Bedform threshold, and findwavelength functions
 % change this to wherever you store your most used functions
 addpath(genpath('C:\Users\jcisnrs2\Documents\MATLAB'));
