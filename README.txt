@@ -2,8 +2,8 @@ Hi, below is information on the files in this folder, the inputs to these
 functions, and how to run BAMBI!
 
 BAMBI.m - The main function. Inputs are:
-  DEMfile - an ascii file of the bathymetric grid
-  flow - the flow direction
+  DEMfile - an ascii file (the filepath ending with filename as a string) of the bathymetric grid
+  flow - the flow direction (a number 0 to 360 in azimuthal format, 0 is north and 90 is east)
   flowvar - the variation in flow that defines a leeside. set at 40 in default.
   export - 1 is yes and 0 is no
 
