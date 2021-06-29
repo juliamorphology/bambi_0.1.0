@@ -21,6 +21,17 @@ runfromexcel.m - a script to run multiple bathymetric files in batches.
 
 parameterfile.xlsx - an example of the parameterfile input file for
                     runfromexcel.m
+                    
+OUTPUT FORMAT:
+   'DataTables/Largedunes.txt' - text file of big dune measurements with columns = x coordinate (latitude), y coordinate (longitude), 
+	dune height (H), dune mean lee-side angle, dune maximum lee-side angle, lee-side slope direction, dune wavelength (λ), 
+	dune flow depth (Y, at the crest), and the fractional height of the maximum slope on the lee side (h/H) for each dune measured 
+	across the river width at steps of the data resolution (herein 0.5 m). Each row is a dune measurement.
+
+	'DataTables/Smalldunes.txt' - text file of small dunes measurements with columns = x coordinate (latitude), y coordinate (longitude), 
+	dune height (H), dune mean lee-side angle, dune maximum lee-side angle, lee-side slope direction, dune wavelength (λ), and
+	dune flow depth (Y, at the crest) for each dune measured across the river width at steps of the data resolution (herein 0.5 m). 
+	Each row is a dune measurement.
 
 
 To run a single bathymetric map through BAMBI, you may download this folder and
