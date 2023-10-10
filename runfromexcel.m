@@ -1,6 +1,6 @@
 % to run the bedform analysis from an excel parameter file
 % addpath('C:\Users\cisneros\Documents\MATLAB\MATLAB')
-parameterfile = 'parameterfile.xlsx';
+parameterfile = '/Users/cisneros/Library/CloudStorage/OneDrive-VirginiaTech/LakeAustinProject/Julia/Split_ascii_for_bambi/data0623/parameterfile.xlsx';
 [num,txt,raw] = xlsread(parameterfile);
 
 DEMfile = raw(2:end,1);
@@ -11,7 +11,7 @@ export = raw(2:end,4);
  for i = 1:numel(flow)
        print = strcat('analyzing',' ',num2str(i));
        disp(print)
-[Smalldunes,Largedunes] = BAMBI(DEMfile{i},flow{i},flowvar{i},0); 
+[Smalldunes,Largedunes] = BAMBI(DEMfile{i},flow{i},flowvar{i},export{i}); 
 
 if export{i} == 1
     print = strcat('saving',' ',num2str(i));
@@ -46,5 +46,6 @@ end
 
 disp(i)
 
-cd ..\..\
+
+cd ../../
 end

@@ -19,7 +19,7 @@ pd = fitdist(ampvector,'gamma');
 s = std(pd);
 m = mean(pd);
 
-threshold = m + s %threshold that defines small and large dunes
+threshold = 0.1; %m + s %threshold that defines small and large dunes
 
 ampthresh = zeros(size(amplitude)); %threshold is defined by dune height
 
